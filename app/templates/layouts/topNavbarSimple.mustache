@@ -1,0 +1,22 @@
+<div class="text-info">
+    <h5 class="panel-title"><a href="/"><i class="glyphicon glyphicon-home"></i> {{labels.home}}</a></h5>
+</div>
+<ul class="list-unstyled">
+</ul>
+
+<div class="text-info">
+    <h5 class="panel-title">{{username}}</h5>
+</div>
+<ul class="list-unstyled">
+{{#authenticated}}
+    <li><a class="navbar-link"  href="{{baseUrl}}/account/password">{{labels.password}}</a></li>
+    <li><a class="navbar-link"  href="{{baseUrl}}/account/settings">{{labels.settings}}</a></li>
+    <li><a class="navbar-link" href="{{baseUrl}}/account/logout"><i class="glyphicon glyphicon-log-out icon-white"></i> {{labels.logout}}</a></li>
+{{/authenticated}}
+{{^authenticated}}
+   <li><a class="navbar-link"  href="{{baseUrl}}/account/signup">{{labels.signup}}</a></li>
+   <li><a class="navbar-link"  href="{{baseUrl}}/account/forgotPassword">{{labels.forgotPassword}}</a></li>
+   <li><a class="navbar-link"  href="{{baseUrl}}/account/login"><i class="glyphicon glyphicon-log-in icon-white"></i> {{labels.login}}</a></li>
+{{/authenticated}}   
+</ul> 
+

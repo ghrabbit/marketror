@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  resources :users
+  get '/' => 'site#index'
+  
+  get 'site/index'
+  get 'site' => 'site#index'
+  get 'site/indexx'
+  get 'site/contact'
+  get 'contact' => 'site#contact'
+  post 'contact' => 'site#contact'
+  get 'site/about'
+  get 'static/about' => 'site#about'
+  get 'site/lang/:id' => 'site#lang'
+
+  get 'account/login'
+  get 'login' => 'account#login'
+  post 'account/login'
+  post 'login' => 'account#login'
+  get 'account/logout'
+  get 'logout' => 'account#logout'
+
+  get 'realperson/index'
+  get 'realperson/create'
+  post 'realperson/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,29 @@
+
+  <div class="text-info">
+    <h5 class="panel-title">{{labels.shopping}}</h5>
+  </div>
+
+
+<ul class="list-unstyled">
+	<li><a class="text-success" href="/shopping/cart">
+	  <span class="glyphicon glyphicon-shopping-cart"></span>{{labels.shopping-cart}}
+	</a></li>
+				<!---->
+
+	<li class="text-success">
+		<span class="badge pull-right">{{model.itemcount}}</span>
+		{{labels.qty}}
+	</li>
+
+	<li class="text-success">
+		<span class="badge pull-right">{{{model.ftotal}}}</span>
+		{{labels.total}}	</li>
+				<!---->
+	<li><a href="/purchase">
+			<i class="glyphicon glyphicon-transfer"></i> {{labels.purchase-now}}
+		</a></li>	
+
+	
+</ul>
+
+

@@ -1,0 +1,19 @@
+<div class="alert alert-danger alert-dismissable">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<h3><span class="glyphicon glyphicon-exclamation-sign"></span> Необходимо исправить следующие ошибки:</h3>
+	<div id="alert-body">
+		{{#errors}}
+                        <!--                        
+                        <p class="msg-text">{{{.}}}</p>
+                        <p>---</p>
+                        -->
+                        <strong>{{attribute_label}} :<strong>
+                        <ul>
+			{{#value}}<li class="msg-text">{{{.}}}</li>{{/value}}
+                        </ul> 
+		{{/errors}}
+	</div>
+</div>
+
+
+

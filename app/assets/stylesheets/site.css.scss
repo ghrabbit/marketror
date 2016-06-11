@@ -1,0 +1,96 @@
+// Place all the styles related to the Site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  //margin-bottom: 60px;
+}
+
+#footer {
+  min-height: 160px;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+  //padding: 25px 15px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+.rails-logo {
+  display: block;
+  text-indent: -9999px;
+  width: 180px;
+  height: 39px;
+  background: url("../images/rails-logo.svg") no-repeat;
+  background-size: 180px 39px;
+} 
+
+.mustache-logo {
+  display: block;
+  text-indent: -9999px;
+  width: 180px;
+  height: 39px;
+  background: url("../images/mustache-2.png") no-repeat;
+  background-size: 180px 39px;
+} 
+
+.sample-eshop-yii-logo {
+  display: block;
+  text-indent: -9999px;
+  width: 240px;
+  height: 50px;
+  background: url("../images/sample-eshop-speed-ror-30a-inv.png") no-repeat;
+  background-size: 240px 50px;
+} 
+
+.sample-eshop-logo {
+  display: block;
+  text-indent: -9999px;
+  width: 150px;
+  height: 54px;
+  background: url("../images/sample-eshop-speed-2.png") no-repeat;
+  background-size: 150px 54px;
+} 
+
+/**/
+
+.sidebar-nav {
+    padding: 10px 0;
+}
+
+.content-part {
+    padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+	.hidden-small {
+		display:none;
+	}
+	
+	.sidebar-nav {
+		padding: 0;
+	}
+}
+
+

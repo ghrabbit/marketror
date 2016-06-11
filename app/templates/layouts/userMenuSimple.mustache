@@ -1,0 +1,19 @@
+			<div class="text-info">
+				<h5 class="panel-title">{{labels.actions}}</h5>
+			</div>
+
+			<ul class="list-unstyled">
+				<li><a class="text-success" href="/catalog">{{labels.catalog}}</a></li>
+				{{#authenticated}}
+				<li><a class="text-success" href="/logout"><i class="glyphicon glyphicon-log-out"></i> {{labels.logout}}</a></li>
+				<li><a class="text-success" href="/settings">{{labels.settings}}</a></li>
+				<li><a class="text-success" href="/password">{{labels.password}}</a></li>
+				{{/authenticated}}
+				{{^authenticated}}
+				<li><a class="text-success" href="/login"><i class="glyphicon glyphicon-log-in"></i> {{labels.login}}</a></li>
+				<li><a class="text-success" href="/signup">{{labels.signup}}</a></li>
+				{{/authenticated}}
+				<li><a class="text-success" href="/static/about">{{labels.about}}</a></li>
+				<li><a class="text-success" href="/contact">{{labels.contact}}</a></li>
+			</ul>
+

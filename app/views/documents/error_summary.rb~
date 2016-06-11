@@ -1,0 +1,9 @@
+# Extend Mustache class to create a Mustache View
+class ErrorSummary < Mustache
+
+  def self.template_file 
+    "app/templates/documents/errorSummary.mustache" 
+  end
+
+
+end
